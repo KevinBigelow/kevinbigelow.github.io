@@ -1,0 +1,30 @@
+header {
+    display: block;
+    background: #000;
+    height: 123px;
+}
+
+@media screen and (min-width: $breakpoint-small) {
+    header {
+        width: 205px;
+        height: 100vh;
+        min-height: 400px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    body {
+        width: calc(100% - 205px);
+        margin-left: 205px;
+    }
+}
+@media screen and (min-width: $breakpoint-medium) {
+
+}
+@media screen and (min-width: $breakpoint-large) {
+
+}
+@media screen and (min-width: $breakpoint-xlarge) {
+
+}
