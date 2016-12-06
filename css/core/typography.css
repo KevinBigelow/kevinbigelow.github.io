@@ -1,4 +1,23 @@
-body {
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, span {
   font-family: 'Roboto', Helvetica, Verdana, sans-serif; }
+
+h1 {
+  font-size: 50px;
+  font-weight: 100; }
+
+h2 {
+  font-size: 20px;
+  font-weight: 400; }
+
+h3 {
+  font-size: 25px;
+  font-weight: 700; }
+
+.subdue {
+  color: #6a6a6a; }
+
+.indicator {
+  font-weight: 700;
+  border-bottom: 4px solid #000000; }
 
 /*# sourceMappingURL=typography.css.map */

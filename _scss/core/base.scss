@@ -1,22 +1,116 @@
+body {
+    background: #f4f6f7;
+}
+
+
 header {
     display: block;
     background: #000;
     height: 123px;
+    margin-bottom: 50px;
+    background: url('/img/bg-dark.jpg') #262626;
+    .inner {
+        padding: 10px;
+    }
+    .actions {
+        padding: 0 25px;
+        
+        a {
+            
+        }
+    }
 }
+.site-title, .site-subtitle {
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.site-title {
+    font-size: 45px;
+    line-height: 41px;
+    font-weight: 100;
+    margin: 0;
+}
+.site-subtitle {
+    font-size: 23px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 5px 0 0;
+}
+
+
+.content {
+    padding: 10px;
+}
+
+
+.project-heading {
+    margin-bottom: 0;
+    h1 {
+        margin-bottom: 0;
+    }
+    * + h2 {
+        margin-top: 0;
+    }
+    .top-bar {
+        margin-bottom: 25px;
+    }
+}
+
+
+.uk-panel {
+    background: #ffffff;
+}
+
 
 @media screen and (min-width: $breakpoint-small) {
     header {
         width: 205px;
         height: 100vh;
         min-height: 400px;
+        margin-bottom: 0;
         position: absolute;
         left: 0;
         top: 0;
         bottom: 0;
+        .inner {
+            padding: 25px;
+            margin-top: 30px;
+        }
+        .actions {
+            padding: 0 25px;
+            
+            a {
+                width: 100%;
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
     }
-    body {
+    .site-title, .site-subtitle {
+        text-align: left;
+    }
+    .site-subtitle {
+        margin: 25px 0 0;
+    }
+    
+    
+    main {
         width: calc(100% - 205px);
         margin-left: 205px;
+    }
+    .content {
+        padding: 15px 30px 20px;
+    }
+    
+    
+    .project-heading {
+        margin-bottom: 95px;
+        .top-bar {
+            margin-bottom: 25px;
+        }
     }
 }
 @media screen and (min-width: $breakpoint-medium) {

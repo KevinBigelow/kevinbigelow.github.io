@@ -8507,26 +8507,111 @@ a.uk-thumbnail:focus {
   h2,
   h3 {
     page-break-after: avoid; } }
-body {
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, span {
   font-family: 'Roboto', Helvetica, Verdana, sans-serif; }
+
+h1 {
+  font-size: 50px;
+  font-weight: 100; }
+
+h2 {
+  font-size: 20px;
+  font-weight: 400; }
+
+h3 {
+  font-size: 25px;
+  font-weight: 700; }
+
+.subdue {
+  color: #6a6a6a; }
+
+.indicator {
+  font-weight: 700;
+  border-bottom: 4px solid #000000; }
+
+body {
+  background: #f4f6f7; }
 
 header {
   display: block;
   background: #000;
-  height: 123px; }
+  height: 123px;
+  margin-bottom: 50px;
+  background: url("/img/bg-dark.jpg") #262626; }
+  header .inner {
+    padding: 10px; }
+  header .actions {
+    padding: 0 25px; }
+
+.site-title, .site-subtitle {
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  width: 100%; }
+
+.site-title {
+  font-size: 45px;
+  line-height: 41px;
+  font-weight: 100;
+  margin: 0; }
+
+.site-subtitle {
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 400;
+  margin: 5px 0 0; }
+
+.content {
+  padding: 10px; }
+
+.project-heading {
+  margin-bottom: 0; }
+  .project-heading h1 {
+    margin-bottom: 0; }
+  .project-heading * + h2 {
+    margin-top: 0; }
+  .project-heading .top-bar {
+    margin-bottom: 25px; }
+
+.uk-panel {
+  background: #ffffff; }
 
 @media screen and (min-width: 480px) {
   header {
     width: 205px;
     height: 100vh;
     min-height: 400px;
+    margin-bottom: 0;
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0; }
+    header .inner {
+      padding: 25px;
+      margin-top: 30px; }
+    header .actions {
+      padding: 0 25px; }
+      header .actions a {
+        width: 100%; }
+        header .actions a:not(:last-child) {
+          margin-bottom: 5px; }
 
-  body {
+  .site-title, .site-subtitle {
+    text-align: left; }
+
+  .site-subtitle {
+    margin: 25px 0 0; }
+
+  main {
     width: calc(100% - 205px);
-    margin-left: 205px; } }
+    margin-left: 205px; }
+
+  .content {
+    padding: 15px 30px 20px; }
+
+  .project-heading {
+    margin-bottom: 95px; }
+    .project-heading .top-bar {
+      margin-bottom: 25px; } }
 
 /*# sourceMappingURL=style.css.map */

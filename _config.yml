@@ -1,12 +1,14 @@
 # Site settings
 title: Kevin Bigelow Design
+myname: Kevin Bigelow
+jobtitle: Interactive Design Specialist
 email: kbigelow.design@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  From wireframes to code, I design and build interfaces.
+description: From wireframes to code, I design and build interfaces.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.kevinbigelow.design"
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  KevinBigelow
+permalink: :title
 
 # Build settings
 markdown: kramdown
