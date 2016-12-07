@@ -1,8 +1,6 @@
 body {
     background: #f4f6f7;
 }
-
-
 header {
     display: block;
     background: #000;
@@ -38,35 +36,22 @@ header {
     font-weight: 400;
     margin: 5px 0 0;
 }
-
-
 .content {
     padding: 10px;
 }
-
-
-.project-heading {
-    margin-bottom: 0;
-    h1 {
-        margin-bottom: 0;
-    }
-    * + h2 {
-        margin-top: 0;
-    }
-    .top-bar {
-        margin-bottom: 25px;
-    }
-}
-
-
-.uk-panel {
-    background: #ffffff;
+ul.icons {
+    padding-left: 0;
+    list-style: none;
 }
 
 
 @media screen and (min-width: $breakpoint-small) {
+    main {
+        width: calc(100% - 150px);
+        margin-left: 150px;
+    }
     header {
-        width: 205px;
+        width: 150px;
         height: 100vh;
         min-height: 400px;
         margin-bottom: 0;
@@ -75,11 +60,11 @@ header {
         top: 0;
         bottom: 0;
         .inner {
-            padding: 25px;
+            padding: 15px;
             margin-top: 30px;
         }
         .actions {
-            padding: 0 25px;
+            padding: 0 15px;
             
             a {
                 width: 100%;
@@ -92,29 +77,44 @@ header {
     .site-title, .site-subtitle {
         text-align: left;
     }
-    .site-subtitle {
-        margin: 25px 0 0;
+    .site-title {
+        font-size: 37px;
+        line-height: 36px;
     }
-    
-    
-    main {
-        width: calc(100% - 205px);
-        margin-left: 205px;
+    .site-subtitle {
+        font-size: 20px;
+        line-height: 23px;
+        margin: 8px 0 0;
     }
     .content {
         padding: 15px 30px 20px;
     }
-    
-    
-    .project-heading {
-        margin-bottom: 95px;
-        .top-bar {
-            margin-bottom: 25px;
-        }
-    }
 }
 @media screen and (min-width: $breakpoint-medium) {
-
+    main {
+        width: calc(100% - 205px);
+        margin-left: 205px;
+    }
+    header {
+        width: 205px;
+        min-height: 400px;
+        .inner {
+            padding: 25px;
+            margin-top: 30px;
+        }
+        .actions {
+            padding: 0 25px;
+        }
+    }
+    .site-title {
+        font-size: 45px;
+        line-height: 41px;
+    }
+    .site-subtitle {
+        font-size: 23px;
+        line-height: 25px;
+        margin: 25px 0 0;
+    }
 }
 @media screen and (min-width: $breakpoint-large) {
 

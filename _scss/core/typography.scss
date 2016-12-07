@@ -1,14 +1,16 @@
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, span {
     font-family: 'Roboto', Helvetica, Verdana, sans-serif;
+    color: #040404;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 100;
+    color: #6a6a6a;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -34,6 +36,41 @@ p {
 }
 
 .indicator {
-    font-weight: 700;
+    font-weight: 400;
     border-bottom: 4px solid #000000;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+@media screen and (min-width: $breakpoint-small) {
+
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+    h1 {
+        font-size: 50px;
+        font-weight: 100;
+        color: #6a6a6a;
+    }
+    
+    h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    h3 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+
+}
+
+@media screen and (min-width: $breakpoint-xlarge) {
+
 }

@@ -1,0 +1,14 @@
+.uk-panel {
+    background: #ffffff;
+}
+
+.panel-small {
+    padding: 15px;
+}
+
+.uk-panel-title {
+    font-weight: 700;
+    &.panel-title-small {
+        font-size: 14px;
+    }
+}
