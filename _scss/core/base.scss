@@ -8,13 +8,24 @@ header {
     margin-bottom: 50px;
     background: url('/img/bg-dark.jpg') #262626;
     .inner {
-        padding: 10px;
+        padding: 20px 10px;
     }
     .actions {
-        padding: 0 25px;
-        
-        a {
-            
+        padding: 0 10px;
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;        
+        .button {
+            width: 50%;
+            float: left;
+            &:first-of-type {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            &:last-of-type {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
         }
     }
 }
@@ -25,23 +36,29 @@ header {
     width: 100%;
 }
 .site-title {
-    font-size: 45px;
-    line-height: 41px;
+    font-size: 37px;
+    line-height: 36px;
     font-weight: 100;
     margin: 0;
 }
 .site-subtitle {
-    font-size: 23px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 23px;
     font-weight: 400;
     margin: 5px 0 0;
 }
 .content {
     padding: 10px;
+    max-width: 860px;
 }
 ul.icons {
     padding-left: 0;
     list-style: none;
+    text-align: center;
+    margin-top: 0;
+}
+.uk-icon-html5 {
+    color: #e44d26;
 }
 
 
@@ -65,25 +82,41 @@ ul.icons {
         }
         .actions {
             padding: 0 15px;
-            
-            a {
+            margin: 0;
+            max-width: none;
+            .button {
                 width: 100%;
-                &:not(:last-child) {
-                    margin-bottom: 5px;
+                &:first-of-type {
+                    border-top-right-radius: 22px;
+                    border-bottom-right-radius: 22px;
                 }
+                &:last-of-type {
+                    border-top-left-radius: 22px;
+                    border-bottom-left-radius: 22px;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+       
+        .button {
+            width: 50%;
+            float: left;
+            &:first-of-type {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            &:last-of-type {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
             }
         }
     }
     .site-title, .site-subtitle {
         text-align: left;
     }
-    .site-title {
-        font-size: 37px;
-        line-height: 36px;
-    }
     .site-subtitle {
-        font-size: 20px;
-        line-height: 23px;
         margin: 8px 0 0;
     }
     .content {

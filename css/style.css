@@ -8550,13 +8550,47 @@ h3 {
 .uk-panel {
   background: #ffffff; }
 
+.uk-panel-title {
+  font-weight: 700; }
+
 .panel-small {
   padding: 15px; }
 
-.uk-panel-title {
-  font-weight: 700; }
-  .uk-panel-title.panel-title-small {
-    font-size: 14px; }
+.panel-title-small {
+  margin-bottom: 10px;
+  line-height: 16px;
+  font-size: 14px; }
+
+.panel-mobile-width-full {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .panel-mobile-width-full {
+    margin-left: -30px;
+    width: calc(100% + 30px); } }
+.button {
+  border-radius: 22px;
+  height: 42px;
+  line-height: 37px;
+  font-weight: 400;
+  font-size: 14px; }
+
+.button-fill-default {
+  box-shadow: 0 3px 1px 0 #7a1f1b;
+  color: #ffffff;
+  background: #f4372e;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ee4731, #f4372e);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ee4731, #f4372e);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ee4731, #f4372e);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ee4731, #f4372e);
+  /* Standard syntax */ }
+  .button-fill-default:hover {
+    color: #ffffff; }
 
 .project-heading {
   margin-bottom: 0; }
@@ -8593,9 +8627,21 @@ header {
   margin-bottom: 50px;
   background: url("/img/bg-dark.jpg") #262626; }
   header .inner {
-    padding: 10px; }
+    padding: 20px 10px; }
   header .actions {
-    padding: 0 25px; }
+    padding: 0 10px;
+    display: block;
+    margin: 0 auto;
+    max-width: 300px; }
+    header .actions .button {
+      width: 50%;
+      float: left; }
+      header .actions .button:first-of-type {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; }
+      header .actions .button:last-of-type {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; }
 
 .site-title, .site-subtitle {
   color: #ffffff;
@@ -8604,23 +8650,29 @@ header {
   width: 100%; }
 
 .site-title {
-  font-size: 45px;
-  line-height: 41px;
+  font-size: 37px;
+  line-height: 36px;
   font-weight: 100;
   margin: 0; }
 
 .site-subtitle {
-  font-size: 23px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 23px;
   font-weight: 400;
   margin: 5px 0 0; }
 
 .content {
-  padding: 10px; }
+  padding: 10px;
+  max-width: 860px; }
 
 ul.icons {
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  text-align: center;
+  margin-top: 0; }
+
+.uk-icon-html5 {
+  color: #e44d26; }
 
 @media screen and (min-width: 480px) {
   main {
@@ -8640,22 +8692,33 @@ ul.icons {
       padding: 15px;
       margin-top: 30px; }
     header .actions {
-      padding: 0 15px; }
-      header .actions a {
+      padding: 0 15px;
+      margin: 0;
+      max-width: none; }
+      header .actions .button {
         width: 100%; }
-        header .actions a:not(:last-child) {
-          margin-bottom: 5px; }
+        header .actions .button:first-of-type {
+          border-top-right-radius: 22px;
+          border-bottom-right-radius: 22px; }
+        header .actions .button:last-of-type {
+          border-top-left-radius: 22px;
+          border-bottom-left-radius: 22px; }
+        header .actions .button:not(:last-child) {
+          margin-bottom: 8px; }
+    header .button {
+      width: 50%;
+      float: left; }
+      header .button:first-of-type {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; }
+      header .button:last-of-type {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; }
 
   .site-title, .site-subtitle {
     text-align: left; }
 
-  .site-title {
-    font-size: 37px;
-    line-height: 36px; }
-
   .site-subtitle {
-    font-size: 20px;
-    line-height: 23px;
     margin: 8px 0 0; }
 
   .content {

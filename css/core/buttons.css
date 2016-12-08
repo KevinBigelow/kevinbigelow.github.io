@@ -1,0 +1,24 @@
+.button {
+  border-radius: 22px;
+  height: 42px;
+  line-height: 37px;
+  font-weight: 400;
+  font-size: 14px; }
+
+.button-fill-default {
+  box-shadow: 0 3px 1px 0 #7a1f1b;
+  color: #ffffff;
+  background: #f4372e;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ee4731, #f4372e);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ee4731, #f4372e);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ee4731, #f4372e);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ee4731, #f4372e);
+  /* Standard syntax */ }
+  .button-fill-default:hover {
+    color: #ffffff; }
+
+/*# sourceMappingURL=buttons.css.map */
