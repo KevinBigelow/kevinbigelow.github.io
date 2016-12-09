@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$breakpoint-small".
-        on line 29 of _scss/core/panel.scss
+        on line 33 of _scss/core/panel.scss
 
-24:     padding: 45px 40px 55px;
-25: }
-26: 
-27: 
-28: 
-29: @media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
-30:     .panel-mobile-width-full {
-31:         margin-left: -30px;
-32:         width: calc(100% + 30px);
-33:     }
-34: }
+28:     padding: 45px 40px 55px;
+29: }
+30: 
+31: 
+32: 
+33: @media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+34:     .panel-mobile-width-full {
+35:         margin-left: -30px;
+36:         width: calc(100% + 30px);
+37:     }
+38: }
 
 Backtrace:
-_scss/core/panel.scss:29
+_scss/core/panel.scss:33
 /Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:542:in `block in run_interp_no_strip'
@@ -61,4 +61,4 @@ _scss/core/panel.scss:29
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$breakpoint-small\".\A         on line 29 of _scss/core/panel.scss\A \A 24:     padding: 45px 40px 55px;\A 25: }\A 26: \A 27: \A 28: \A 29: @media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {\A 30:     .panel-mobile-width-full {\A 31:         margin-left: -30px;\A 32:         width: calc(100% + 30px);\A 33:     }\A 34: }"; }
+  content: "Error: Undefined variable: \"$breakpoint-small\".\A         on line 33 of _scss/core/panel.scss\A \A 28:     padding: 45px 40px 55px;\A 29: }\A 30: \A 31: \A 32: \A 33: @media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {\A 34:     .panel-mobile-width-full {\A 35:         margin-left: -30px;\A 36:         width: calc(100% + 30px);\A 37:     }\A 38: }"; }

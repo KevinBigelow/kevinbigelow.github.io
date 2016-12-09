@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$breakpoint-small".
-        on line 48 of _scss/core/typography.scss
+        on line 49 of _scss/core/typography.scss
 
-43: .text-center {
-44:     text-align: center;
-45: }
-46: 
+44: .text-center {
+45:     text-align: center;
+46: }
 47: 
-48: @media screen and (min-width: $breakpoint-small) {
-49: 
-50: }
-51: 
-52: @media screen and (min-width: $breakpoint-medium) {
-53:     h1 {
+48: 
+49: @media screen and (min-width: $breakpoint-small) {
+50: 
+51: }
+52: 
+53: @media screen and (min-width: $breakpoint-medium) {
+54:     h1 {
 
 Backtrace:
-_scss/core/typography.scss:48
+_scss/core/typography.scss:49
 /Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:542:in `block in run_interp_no_strip'
@@ -61,4 +61,4 @@ _scss/core/typography.scss:48
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$breakpoint-small\".\A         on line 48 of _scss/core/typography.scss\A \A 43: .text-center {\A 44:     text-align: center;\A 45: }\A 46: \A 47: \A 48: @media screen and (min-width: $breakpoint-small) {\A 49: \A 50: }\A 51: \A 52: @media screen and (min-width: $breakpoint-medium) {\A 53:     h1 {"; }
+  content: "Error: Undefined variable: \"$breakpoint-small\".\A         on line 49 of _scss/core/typography.scss\A \A 44: .text-center {\A 45:     text-align: center;\A 46: }\A 47: \A 48: \A 49: @media screen and (min-width: $breakpoint-small) {\A 50: \A 51: }\A 52: \A 53: @media screen and (min-width: $breakpoint-medium) {\A 54:     h1 {"; }
