@@ -8628,7 +8628,10 @@ h5.uk-panel-title {
   .project--heading--main-text {
     margin-bottom: 0; } }
 body {
-  background: #f4f6f7; }
+  background: #eaeaea; }
+
+html {
+  background: #262426; }
 
 header {
   display: block;
@@ -8673,7 +8676,8 @@ header {
 
 .content {
   padding: 10px;
-  max-width: 860px; }
+  max-width: 860px;
+  background: #f4f6f7; }
 
 ul.icons {
   padding-left: 0;
@@ -8694,7 +8698,7 @@ ul.icons {
     height: 100vh;
     min-height: 400px;
     margin-bottom: 0;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     bottom: 0; }
