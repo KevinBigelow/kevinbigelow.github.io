@@ -8637,7 +8637,6 @@ header {
   display: block;
   background: #000;
   height: 123px;
-  margin-bottom: 50px;
   background: url("/img/bg-dark.jpg") #262626; }
   header .inner {
     padding: 20px 10px; }
@@ -8675,7 +8674,7 @@ header {
   margin: 5px 0 0; }
 
 .content {
-  padding: 10px;
+  padding: 50px 10px 10px;
   max-width: 860px;
   background: #f4f6f7; }
 
@@ -8697,7 +8696,6 @@ ul.icons {
     width: 150px;
     height: 100vh;
     min-height: 400px;
-    margin-bottom: 0;
     position: fixed;
     left: 0;
     top: 0;
