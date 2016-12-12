@@ -1,19 +1,27 @@
-<div class="uk-grid uk-grid-small">
-    <div class="uk-width-1-1 uk-width-medium-1-2">
-        <h3>Contact Me</h3>
-        <i class="uk-icon-large uk-icon-linkedin"></i>
-        <i class="uk-icon-large uk-icon-dribbble"></i>
-        <i class="uk-icon-large uk-icon-github"></i>
+<section class="uk-grid uk-grid-medium section-split">
+    <div class="uk-width-1-1 uk-width-medium-1-2 section-split-title">
+        <h3 class="">Contact Me</h3>
+        <ul class="icons">
+            <i class="uk-icon-large uk-icon-linkedin"></i>
+            <i class="uk-icon-large uk-icon-dribbble"></i>
+            <i class="uk-icon-large uk-icon-github"></i>
+        </ul>
     </div>
-    <div class="uk-width-1-1 uk-width-medium-1-2">
-        <form>
-            <label for="name">Your Name</label>
-            <input type="text">
-            <label for="name">Your Email</label>
-            <input type="email">
-            <label for="name">Message</label>
-            <textarea type="text"></textarea>
+    <div class="uk-width-1-1 uk-width-medium-1-2 section-split-content">
+        <form class="uk-form uk-form-stacked kb-form">
+            <label for="form-name" class="uk-form-label">Your Name</label>
+            <div class="uk-form-controls">
+                <input type="text" id="form-name">
+            </div>
+            <label for="form-email" class="uk-form-label">Your Email</label>
+            <div class="uk-form-controls">
+                <input type="email" id="form-email">
+            </div>
+            <label for="form-message" class="uk-form-label">Message</label>
+            <div class="uk-form-controls">
+                <textarea type="text" id="form-message"></textarea>
+            </div>
+            <a class="button button-fill-default uk-button">Send Message</a>
         </form>
     </div>
-    <a class="button button-outline">View All Projects</a>
-</div>
+</section>

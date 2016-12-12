@@ -1,3 +1,5 @@
+
+// Site Wide
 body {
     background: #eaeaea;
 }
@@ -54,10 +56,21 @@ header {
     max-width: 860px;
     background: #f4f6f7;
 }
+
+
+// Section Split
+.section-split {
+    padding-top: 30px;
+    padding-bottom: 55px;
+}
+.section-split-title {
+    text-align: center;
+}
+
+
 ul.icons {
     padding-left: 0;
     list-style: none;
-    text-align: center;
     margin-top: 0;
 }
 .uk-icon-html5 {
@@ -149,6 +162,9 @@ ul.icons {
         font-size: 23px;
         line-height: 25px;
         margin: 25px 0 0;
+    }
+    .section-split-title {
+        text-align: right;
     }
 }
 @media screen and (min-width: $breakpoint-large) {

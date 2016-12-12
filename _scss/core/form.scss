@@ -1,0 +1,50 @@
+$white: #ffffff;
+$black: #000000;
+$text-subdued: #6a6a6a;
+
+$bg-form: #eaeaea;
+$label-color: $text-subdued;
+
+.kb-form {
+    select,
+    textarea,
+    input:not([type]),
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"] {
+        background: $bg-form;
+        box-shadow: inset 0 1px 5px 0 rgba(0,0,0,.07);
+        border: none;
+        border-bottom: 1px solid $white;
+        border-radius: 3px;
+        width: 270px;
+        height: 38px;
+        &:focus {
+            color: $black;
+            box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+        }
+    }
+    textarea {
+        height: auto;
+        min-height: 85px;
+    }
+    label {
+        color: $label-color;
+        font-size: 16px;
+        &:not(:first-of-type) {
+            margin-top: 6px
+        }
+    }
+}
+

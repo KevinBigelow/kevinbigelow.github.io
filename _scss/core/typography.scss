@@ -1,12 +1,18 @@
+@import "vendor/uikit/uikit-variables.scss";
+
+$text-subdued: #6a6a6a;
+$text-default: #040404;
+
+
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, span {
     font-family: 'Roboto', Helvetica, Verdana, sans-serif;
-    color: #040404;
+    color: $text-default;
 }
 
 h1 {
     font-size: 36px;
     font-weight: 100;
-    color: #6a6a6a;
+    color: $text-subdued;
 }
 
 h2 {
@@ -15,8 +21,8 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 35px;
+    font-weight: 100;
 }
 
 h4 {
@@ -33,7 +39,7 @@ p {
 }
 
 .subdue {
-    color: #6a6a6a;
+    color: $text-subdued;
 }
 
 .indicator {
@@ -53,18 +59,15 @@ p {
 @media screen and (min-width: $breakpoint-medium) {
     h1 {
         font-size: 50px;
-        font-weight: 100;
-        color: #6a6a6a;
+        color: $text-subdued;
     }
     
     h2 {
         font-size: 20px;
-        font-weight: 400;
     }
     
     h3 {
-        font-size: 25px;
-        font-weight: 700;
+        font-size: 45px;
     }
 }
 
