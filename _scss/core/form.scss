@@ -30,21 +30,23 @@ $label-color: $text-subdued;
         border-radius: 3px;
         width: 270px;
         height: 38px;
+        transition-property: border;
         &:focus {
             color: $black;
-            box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+            box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
+            border-color: $white;
         }
     }
     textarea {
         height: auto;
         min-height: 85px;
     }
-    label {
+    .kb-form-label {
         color: $label-color;
-        font-size: 16px;
+        font-size: 14px;
+        margin-bottom: 3px;
         &:not(:first-of-type) {
-            margin-top: 6px
+            margin-top: 8px;
         }
     }
 }
-

@@ -21,7 +21,8 @@
   border-bottom: 1px solid #ffffff;
   border-radius: 3px;
   width: 270px;
-  height: 38px; }
+  height: 38px;
+  transition-property: border; }
   .kb-form select:focus,
   .kb-form textarea:focus,
   .kb-form input:not([type]):focus,
@@ -40,14 +41,16 @@
   .kb-form input[type="tel"]:focus,
   .kb-form input[type="color"]:focus {
     color: #000000;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
+    border-color: #ffffff; }
 .kb-form textarea {
   height: auto;
   min-height: 85px; }
-.kb-form label {
+.kb-form .kb-form-label {
   color: #6a6a6a;
-  font-size: 16px; }
-  .kb-form label:not(:first-of-type) {
-    margin-top: 6px; }
+  font-size: 14px;
+  margin-bottom: 3px; }
+  .kb-form .kb-form-label:not(:first-of-type) {
+    margin-top: 8px; }
 
 /*# sourceMappingURL=form.css.map */

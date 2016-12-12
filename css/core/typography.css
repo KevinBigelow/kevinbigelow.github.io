@@ -4,16 +4,20 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, span {
 
 h1 {
   font-size: 36px;
+  line-height: 40px;
   font-weight: 100;
   color: #6a6a6a; }
 
 h2 {
   font-size: 16px;
+  line-height: 20px;
   font-weight: 400; }
 
 h3 {
   font-size: 35px;
-  font-weight: 100; }
+  line-height: 39px;
+  font-weight: 100;
+  color: #6a6a6a; }
 
 p {
   font-size: 16px;
@@ -32,12 +36,15 @@ p {
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 50px;
+    line-height: 52px;
     color: #6a6a6a; }
 
   h2 {
-    font-size: 20px; }
+    font-size: 20px;
+    line-height: 24px; }
 
   h3 {
-    font-size: 45px; } }
+    font-size: 45px;
+    line-height: 49px; } }
 
 /*# sourceMappingURL=typography.css.map */
