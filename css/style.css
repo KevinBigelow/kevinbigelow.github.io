@@ -8655,7 +8655,7 @@ h5.uk-panel-title {
   border-radius: 3px;
   width: 270px;
   height: 38px;
-  transition-property: border; }
+  transition-property: border, background; }
   .kb-form select:focus,
   .kb-form textarea:focus,
   .kb-form input:not([type]):focus,
@@ -8685,6 +8685,8 @@ h5.uk-panel-title {
   margin-bottom: 3px; }
   .kb-form .kb-form-label:not(:first-of-type) {
     margin-top: 8px; }
+.kb-form .button {
+  margin-top: 10px; }
 
 body, html {
   background: #eaeaea; }
@@ -8735,11 +8737,18 @@ header {
   background: #f4f6f7; }
 
 .section-split {
-  padding-top: 30px;
-  padding-bottom: 55px; }
+  padding-top: 0;
+  padding-bottom: 35px; }
 
 .section-split-title {
   text-align: center; }
+  .section-split-title h3 {
+    margin-bottom: 6px; }
+
+.section-split-content {
+  width: 270px;
+  display: block;
+  margin: 30px auto 0; }
 
 ul.icons {
   padding-left: 0;
@@ -8820,11 +8829,18 @@ ul.icons {
     line-height: 25px;
     margin: 25px 0 0; }
 
+  .section-split {
+    padding-top: 30px;
+    padding-bottom: 55px; }
+
   .section-split-title {
     text-align: right;
     border-right: 1px solid #eaeaea;
     padding-right: 25px; }
     .section-split-title h3 {
-      margin: 14% 0 10px; } }
+      margin: 65px 0 10px; }
+
+  .section-split-content {
+    margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */

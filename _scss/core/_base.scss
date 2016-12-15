@@ -5,6 +5,7 @@ $border-gray-default: #eaeaea;
 
 
 // Site Wide
+
 body, html {
     background: $bg-secondary;
 }
@@ -61,12 +62,21 @@ header {
 
 
 // Section Split
+
 .section-split {
-    padding-top: 30px;
-    padding-bottom: 55px;
+    padding-top: 0;
+    padding-bottom: 35px;
 }
 .section-split-title {
     text-align: center;
+    h3 {
+        margin-bottom: 6px;
+    }
+}
+.section-split-content {
+    width: 270px;
+    display: block;
+    margin: 30px auto 0;
 }
 
 
@@ -81,6 +91,9 @@ ul.icons {
 
 
 @media screen and (min-width: $breakpoint-small) {
+    
+    // Site Wide
+    
     main {
         width: calc(100% - 150px);
         margin-left: 150px;
@@ -141,10 +154,14 @@ ul.icons {
     }
 }
 @media screen and (min-width: $breakpoint-medium) {
+    
+    // Site Wide
+    
     main {
         width: calc(100% - 205px);
         margin-left: 205px;
     }
+    
     header {
         width: 205px;
         min-height: 400px;
@@ -165,13 +182,24 @@ ul.icons {
         line-height: 25px;
         margin: 25px 0 0;
     }
+    
+    
+    // Section Split
+    
+    .section-split {
+        padding-top: 30px;
+        padding-bottom: 55px;
+    }
     .section-split-title {
         text-align: right;
         border-right: 1px solid $border-gray-default;
         padding-right: 25px;
         h3 {
-            margin: 14% 0 10px;
+            margin: 65px 0 10px;
         }
+    }
+    .section-split-content {
+        margin: 0;
     }
 }
 @media screen and (min-width: $breakpoint-large) {
