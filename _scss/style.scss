@@ -2,13 +2,13 @@
 // Vendor
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 
-@import "vendor/uikit/uikit-mixins.scss";
-@import "vendor/uikit/uikit.scss";
+@import "_vendor/uikit/uikit-mixins.scss";
+@import "_vendor/uikit/uikit.scss";
 
 // Core
-@import "core/typography.scss",
-        "core/panel.scss",
-        "core/buttons.scss",
-        "core/projects.scss",
-        "core/form.scss",
-        "core/base.scss";
+@import "_core/typography.scss",
+        "_core/panels.scss",
+        "_core/buttons.scss",
+        "_core/projects.scss",
+        "_core/form.scss",
+        "_core/base.scss";

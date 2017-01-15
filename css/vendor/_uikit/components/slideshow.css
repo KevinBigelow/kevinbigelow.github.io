@@ -1,0 +1,63 @@
+/*
+Error: Undefined mixin 'hook-slideshow-misc'.
+        on line 206 of _scss/vendor/_uikit/components/slideshow.scss, in `hook-slideshow-misc'
+        from line 206 of _scss/vendor/_uikit/components/slideshow.scss
+
+201: 
+202: 
+203: // Hooks
+204: // ========================================================================
+205: 
+206: @include hook-slideshow-misc();
+207: 
+208: // @mixin hook-slideshow-misc(){}
+
+Backtrace:
+_scss/vendor/_uikit/components/slideshow.scss:206:in `hook-slideshow-misc'
+_scss/vendor/_uikit/components/slideshow.scss:206
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/bin/sass:23:in `load'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/bin/sass:23:in `<main>'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+/Users/Kevin/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'hook-slideshow-misc'.\A         on line 206 of _scss/vendor/_uikit/components/slideshow.scss, in `hook-slideshow-misc'\A         from line 206 of _scss/vendor/_uikit/components/slideshow.scss\A \A 201: \A 202: \A 203: // Hooks\A 204: // ========================================================================\A 205: \A 206: @include hook-slideshow-misc();\A 207: \A 208: // @mixin hook-slideshow-misc(){}"; }
