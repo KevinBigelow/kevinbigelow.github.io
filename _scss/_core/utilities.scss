@@ -1,0 +1,18 @@
+// Full Width For Mobile!
+.mobile-width-full {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+    .mobile-width-full {
+        margin-left: -30px;
+        width: calc(100% + 30px);
+    }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+    .mobile-width-full {
+        margin: 0;
+	}
+}

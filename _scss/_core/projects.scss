@@ -7,30 +7,49 @@
         margin-top: 0;
     }
 }
+
 .project-heading--top-bar {
     margin-bottom: 15px;
 }
+
+.project-heading--main {
+    @include flex();
+    flex-direction: column;
+}
+
 .project-heading--main-text {
     margin-bottom: 35px;
 }
 
+.project-heading--main-tools {
+    height: 60px
+}
+
 @media screen and (min-width: $breakpoint-small) {
-    .project-heading {
-        margin-bottom: 95px;
-    }
-    .project-heading--top-bar {
-        margin-bottom: 25px;
-    }
+
 }
 
 @media screen and (min-width: $breakpoint-medium) {
     .project-heading {
+        margin-bottom: 95px;
         h1 {
             margin-bottom: 11px;
         }
     }
-    .project--heading--main-text {
+    .project-heading--top-bar {
+        margin-bottom: 40px;
+    }
+    .project-heading--main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .project-heading--main-text {
         margin-bottom: 0;
+        margin-right: 10px;
+        width: auto;
+    }
+    .project-heading--main-tools {
+        width: 170px;
     }
     
 }

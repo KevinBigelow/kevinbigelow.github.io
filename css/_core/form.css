@@ -1,0 +1,8 @@
+.kb-form select, .kb-form textarea, .kb-form input:not([type]), .kb-form input[type="text"], .kb-form input[type="password"], .kb-form input[type="datetime"], .kb-form input[type="datetime-local"], .kb-form input[type="date"], .kb-form input[type="month"], .kb-form input[type="time"], .kb-form input[type="week"], .kb-form input[type="number"], .kb-form input[type="email"], .kb-form input[type="url"], .kb-form input[type="search"], .kb-form input[type="tel"], .kb-form input[type="color"] { background: #eaeaea; box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.07); border: none; border-bottom: 1px solid #ffffff; border-radius: 3px; width: 270px; height: 38px; transition-property: border, background; }
+.kb-form select:focus, .kb-form textarea:focus, .kb-form input:not([type]):focus, .kb-form input[type="text"]:focus, .kb-form input[type="password"]:focus, .kb-form input[type="datetime"]:focus, .kb-form input[type="datetime-local"]:focus, .kb-form input[type="date"]:focus, .kb-form input[type="month"]:focus, .kb-form input[type="time"]:focus, .kb-form input[type="week"]:focus, .kb-form input[type="number"]:focus, .kb-form input[type="email"]:focus, .kb-form input[type="url"]:focus, .kb-form input[type="search"]:focus, .kb-form input[type="tel"]:focus, .kb-form input[type="color"]:focus { color: #000000; box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15); border-color: #ffffff; }
+.kb-form textarea { height: auto; min-height: 85px; }
+.kb-form .kb-form-label { color: #6a6a6a; font-size: 14px; margin-bottom: 3px; }
+.kb-form .kb-form-label:not(:first-of-type) { margin-top: 8px; }
+.kb-form .button { margin-top: 10px; }
+
+/*# sourceMappingURL=form.css.map */

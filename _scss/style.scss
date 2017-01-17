@@ -6,9 +6,11 @@
 @import "_vendor/uikit/uikit.scss";
 
 // Core
-@import "_core/typography.scss",
+@import "_core/mixins.scss",
+        "_core/typography.scss",
         "_core/panels.scss",
         "_core/buttons.scss",
         "_core/projects.scss",
         "_core/form.scss",
+        "_core/utilities.scss",
         "_core/base.scss";
