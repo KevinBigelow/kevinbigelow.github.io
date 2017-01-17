@@ -58,6 +58,8 @@ header {
     padding: 50px 10px 10px;
     max-width: 1030px;
     background: #f4f6f7;
+//     Poosibly want this for scrollspy animations from left, butt causes issues with header action overlap on mobile
+//     overflow-x: hidden;
 }
 
 

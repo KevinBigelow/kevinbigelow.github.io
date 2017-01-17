@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$breakpoint-small".
-        on line 95 of _scss/_core/base.scss
+        on line 7 of _scss/_core/more-projects.scss
 
-90: .uk-icon-html5 {
-91:     color: #e44d26;
-92: }
-93: 
-94: 
-95: @media screen and (min-width: $breakpoint-small) {
-96:     
-97:     // Site Wide
-98:     
-99:     main {
-100:         width: calc(100% - 150px);
+2:     background: #f4372e;
+3:     margin: 40px -10px;
+4:     padding: 20px;
+5: }
+6: 
+7: @media screen and (min-width: $breakpoint-small) {
+8:     .more-projects {
+9:         margin: 40px -30px;
+10:         padding: 30px;
+11:     }
+12: }
 
 Backtrace:
-_scss/_core/base.scss:95
+_scss/_core/more-projects.scss:7
 /Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/Kevin/.rvm/gems/ruby-2.1.2/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:542:in `block in run_interp_no_strip'
@@ -61,4 +61,4 @@ _scss/_core/base.scss:95
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$breakpoint-small\".\A         on line 95 of _scss/_core/base.scss\A \A 90: .uk-icon-html5 {\A 91:     color: #e44d26;\A 92: }\A 93: \A 94: \A 95: @media screen and (min-width: $breakpoint-small) {\A 96:     \A 97:     // Site Wide\A 98:     \A 99:     main {\A 100:         width: calc(100% - 150px);"; }
+  content: "Error: Undefined variable: \"$breakpoint-small\".\A         on line 7 of _scss/_core/more-projects.scss\A \A 2:     background: #f4372e;\A 3:     margin: 40px -10px;\A 4:     padding: 20px;\A 5: }\A 6: \A 7: @media screen and (min-width: $breakpoint-small) {\A 8:     .more-projects {\A 9:         margin: 40px -30px;\A 10:         padding: 30px;\A 11:     }\A 12: }"; }

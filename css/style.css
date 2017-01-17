@@ -3795,6 +3795,9 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 
 @media screen and (min-width: 480px) and (max-width: 768px) { .mobile-width-full { margin-left: -30px; width: calc(100% + 30px); } }
 @media screen and (min-width: 768px) { .mobile-width-full { margin: 0; } }
+.more-projects { background: #f4372e; margin: 40px -10px; padding: 20px; }
+
+@media screen and (min-width: 480px) { .more-projects { margin: 40px -30px; padding: 30px; } }
 body, html { background: #eaeaea; }
 
 header { display: block; background: #000; height: 123px; background: url("/img/bg-dark.jpg") #262626; }
