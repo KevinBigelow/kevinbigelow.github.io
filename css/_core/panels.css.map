@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA,SAAU,GACN,UAAU,EAAE,OAAO;;AAGvB,eAAgB,GACZ,WAAW,EAAE,GAAG;;AAGpB,iBAAkB,GACd,SAAS,EAAE,IAAI;;AAGnB,iBAAkB,GACd,aAAa,EAAE,IAAI,EACnB,WAAW,EAAE,IAAI,EACjB,SAAS,EAAE,IAAI;;AAInB,eAAgB,GACZ,OAAO,EAAE,IAAI;;AAGjB,aAAc,GACV,OAAO,EAAE,cAAc;;AAI3B,gBAAiB,GACb,QAAQ,EAAE,QAAQ",
-"sources": ["../../_scss/_core/panels.scss"],
-"names": [],
-"file": "panels.css"
-}

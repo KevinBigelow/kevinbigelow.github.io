@@ -1,13 +1,16 @@
 <header>
-    
-    <div class="inner">
-        <span class="site-title">{{ site.myname }}</span>
-        <p class="site-subtitle">{{ site.jobtitle }}</p>
+    <div class="uk-container uk-container-center no-padding">
+        <div class="uk-grid no-margin">
+            <div class="uk-width-1-1 uk-width-medium-1-2 site-heading">
+                <span class="site-title">{{ site.myname }}</span>
+                <p class="site-subtitle">{{ site.jobtitle }}</p>
+            </div>
+            
+            <div class="uk-width-1-1 uk-width-medium-1-2 site-nav uk-clearfix">
+                <a class="nav-link">My Work</a>
+                <a class="nav-link">About Me</a>
+                <a class="nav-link nav-button">Contact Me</a>
+            </div>
+        </div>
     </div>
-    
-    <div class="actions uk-clearfix">
-        <a class="button button-fill-default uk-button uk-width-1-1">My Work</a>
-        <a class="button button-fill-default uk-button uk-width-1-1">About Me</a>
-    </div>
-    
 </header>
