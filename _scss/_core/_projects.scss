@@ -1,16 +1,18 @@
 .project-heading {
     margin-bottom: 0;
     h1 {
-        margin-bottom: 0;
+        margin-bottom: 6px;
     }
     * + h2 {
-        margin-top: 0;
+        margin: 0 0 8px;
     }
 }
 
+/*
 .project-heading--top-bar {
     margin-bottom: 15px;
 }
+*/
 
 .project-heading--main {
     @include flex();
@@ -19,6 +21,7 @@
 
 .project-heading--main-text {
     margin-bottom: 35px;
+    padding: 0 25px;
 }
 
 .project-heading--main-tools {
@@ -26,19 +29,24 @@
 }
 
 @media screen and (min-width: $breakpoint-small) {
+    .project-heading {
 
+    }
 }
 
 @media screen and (min-width: $breakpoint-medium) {
     .project-heading {
+        padding: 0 25px;
         margin-bottom: 95px;
         h1 {
             margin-bottom: 11px;
         }
     }
+/*
     .project-heading--top-bar {
         margin-bottom: 40px;
     }
+*/
     .project-heading--main {
         flex-direction: row;
         justify-content: space-between;
@@ -47,6 +55,7 @@
         margin-bottom: 0;
         margin-right: 10px;
         width: auto;
+        padding: 0;
     }
     .project-heading--main-tools {
         width: 170px;
@@ -55,9 +64,13 @@
 }
 
 @media screen and (min-width: $breakpoint-large) {
-
+    .project-heading--main-text {
+        padding: 0;
+    }
 }
 
 @media screen and (min-width: $breakpoint-xlarge) {
-
+    .project-heading {
+        padding: 0;
+    }
 }

@@ -28,36 +28,49 @@ h5.uk-panel-title {
 
 // Panel Layers
 .kb-panel-layers {
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.kb-panel-layer-img {
 
 }
 
-.kb-panel-layer-text {
+.kb-panel-layers--2up {
+    
+}
+
+.kb-panel-layers--mega {
+    img {
+      width: 100%;
+      z-index: 0;
+      display: block;
+    }
+    
+    .kb-panel-box {
+      margin: 0;
+      z-index: 5;
+    }    
+}
+
+.kb-panel-layer--img {
+
+}
+
+.kb-panel-box {
     h4 {
         padding-bottom: 13px;
-        border-bottom: 1px solid #f4f6f7;
     }
     p {
         margin: 0 0 13px 0;
     }
 }
 
-@media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
-    .kb-panel-layers {
-        margin-left: -30px;
-        width: calc(100% + 60px);
+@media screen and (min-width: $breakpoint-small) {
+    .kb-panel-layers--mega {       
+        .kb-panel-box {
+          margin: -20px 20px 20px;
+        }    
     }
 }
 
 @media screen and (min-width: $breakpoint-medium) {
-    .kb-panel-layers {
-        margin: 0;
-	}
-    .kb-panel-layer-text {
+    .kb-panel-box {
         @include flex();
         flex-direction: column;
         justify-content: center;

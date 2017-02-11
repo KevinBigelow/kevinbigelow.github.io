@@ -1,5 +1,6 @@
 $gray-standard: #eaeaea;
 
+$bg-default: #f4f6f7;
 $bg-secondary: #eaeaea;
 $border-gray-default: #eaeaea;
 
@@ -7,8 +8,10 @@ $border-gray-default: #eaeaea;
 // Site Wide
 
 body, html {
-    background: $bg-secondary;
+    background: $bg-default;
 }
+
+// Header
 
 header {
     background: url('/img/bg-dark.jpg') #262626;
@@ -57,12 +60,10 @@ header {
     }
 }
 
+// Content
+
 .content {
-    padding: 50px 10px 10px;
-    max-width: 1030px;
-    background: #f4f6f7;
-//     Poosibly want this for scrollspy animations from left, butt causes issues with header action overlap on mobile
-//     overflow-x: hidden;
+    padding: 30px 0 10px;
 }
 
 
@@ -99,14 +100,16 @@ ul.icons {
 
 @media screen and (min-width: $breakpoint-small) {
     
-    .content {
-        padding: 15px 30px 20px;
-    }
     
 }
+
 @media screen and (min-width: $breakpoint-medium) {
     
-    // Site Wide
+    .content {
+        padding-top: 50px;
+    }
+    
+    // Header
     
     header {
         padding: 25px;
@@ -138,7 +141,9 @@ ul.icons {
         flex-grow: 0;
         height: auto;
         padding: 15px;
-        border: none;
+        &:not(:first-of-type) {
+            border: none;   
+        }
     }
     
     
