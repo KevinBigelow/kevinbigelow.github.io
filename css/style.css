@@ -3757,7 +3757,6 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 .kb-panel-layers--mega img { width: 100%; z-index: 0; display: block; }
 .kb-panel-layers--mega .kb-panel-box { margin: 0; z-index: 5; }
 
-.kb-panel-box h4 { padding-bottom: 13px; }
 .kb-panel-box p { margin: 0 0 13px 0; }
 
 @media screen and (min-width: 768px) { .kb-panel-box { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ flex-direction: column; justify-content: center; }
@@ -3802,12 +3801,26 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 
 .no-padding { padding: 0 !important; }
 
+.margin-bottom-large { margin-bottom: 100px; }
+
+.margin-bottom-xlarge { margin-bottom: 150px; }
+
+.margin-top-large { margin-top: 100px; }
+
+.margin-top-xlarge { margin-top: 150px; }
+
+.block-center { margin-right: auto; margin-left: auto; display: block; }
+
 @media screen and (min-width: 480px) and (max-width: 768px) { .mobile-width-full { /* margin-left: -30px; width: calc(100% + 30px);
 */ } }
 @media screen and (min-width: 768px) { .mobile-width-full { margin: 0; } }
-.more-projects { background: #f4372e; margin: 40px -10px; padding: 20px; }
+.more-projects { background: #1c62a4; margin-top: 100px; padding: 20px; position: relative; width: 100vw; /* &:after { content: ''; background: #f4372e; display: block; top: 0; bottom: 0; width: 100vw; position: absolute; }
+*/ }
+.more-projects h3, .more-projects p { text-align: center; color: #ffffff; }
+.more-projects h3 { margin-top: 40px; }
+.more-projects p { margin-bottom: 50px; }
 
-@media screen and (min-width: 480px) { .more-projects { margin: 40px -30px; padding: 30px; } }
+@media screen and (min-width: 480px) { .more-projects { padding: 0; } }
 body, html { background: #f4f6f7; }
 
 header { background: url("/img/bg-dark.jpg") #262626; }
@@ -3820,7 +3833,7 @@ header { background: url("/img/bg-dark.jpg") #262626; }
 
 .site-subtitle { font-size: 21px; line-height: 23px; font-weight: 100; margin: 5px 0 0; }
 
-.site-nav { padding: 0; background: #1c62a4; display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ justify-content: space-between; }
+.site-nav { padding: 0; background: #1c62a4; background: #2a4865; display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ justify-content: space-between; }
 
 .nav-link { color: #ffffff; padding: 9px 0 11px; text-align: center; flex-grow: 1; font-weight: 100; }
 .nav-link:not(:first-of-type) { border-left: 1px solid rgba(0, 0, 0, 0.125); }
@@ -3844,8 +3857,9 @@ ul.icons { padding-left: 0; list-style: none; margin-top: 0; }
   .site-title { font-size: 28px; line-height: 30px; }
   .site-subtitle { font-size: 24px; line-height: 26px; }
   .site-nav { padding: 0; background: none; align-items: center; justify-content: flex-end; }
-  .nav-link { font-size: 18px; flex-grow: 0; height: auto; padding: 15px; }
-  .nav-link:not(:first-of-type) { border: none; }
+  .nav-link { font-size: 18px; flex-grow: 0; height: auto; padding: 15px; transition: border-color .25s; border-bottom: 2px solid rgba(255, 255, 255, 0); border-top: 2px solid rgba(255, 255, 255, 0); }
+  .nav-link:not(:first-of-type) { border-left: none; }
+  .nav-link:hover { color: #ffffff; text-decoration: none; border-color: white; }
   .section-split { padding-top: 30px; padding-bottom: 55px; }
   .section-split-title { text-align: right; border-right: 1px solid #eaeaea; padding-right: 25px; }
   .section-split-title h3 { margin: 65px 0 10px; }

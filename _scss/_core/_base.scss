@@ -45,6 +45,7 @@ header {
 .site-nav {
     padding: 0;
     background: #1c62a4;
+    background: #2a4865;
     @include flex();
     justify-content: space-between;
 }
@@ -141,8 +142,20 @@ ul.icons {
         flex-grow: 0;
         height: auto;
         padding: 15px;
+        transition: border-color .25s;
+        border-bottom: 2px solid rgba(255,255,255,0);
+        border-top: 2px solid rgba(255,255,255,0);
         &:not(:first-of-type) {
-            border: none;   
+            border-left: none;   
+        }
+        &:last-of-type {
+//             padding-right: 0;
+        }
+        &:hover {
+//             padding-bottom: 18px;
+            color: #ffffff;
+            text-decoration: none;
+            border-color: rgba(255,255,255,1);
         }
     }
     

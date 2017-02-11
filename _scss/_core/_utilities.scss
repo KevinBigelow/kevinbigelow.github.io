@@ -12,6 +12,28 @@
     padding: 0 !important;
 }
 
+.margin-bottom-large {
+    margin-bottom: 100px;
+}
+
+.margin-bottom-xlarge {
+    margin-bottom: 150px;
+}
+
+.margin-top-large {
+    margin-top: 100px;
+}
+
+.margin-top-xlarge {
+    margin-top: 150px;
+}
+
+.block-center {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
 @media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
     .mobile-width-full {
 /*
