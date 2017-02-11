@@ -62,17 +62,20 @@ h5.uk-panel-title {
 }
 
 @media screen and (min-width: $breakpoint-small) {
-    .kb-panel-layers--mega {       
-        .kb-panel-box {
-          margin: -20px 20px 20px;
-        }    
-    }
+
 }
 
 @media screen and (min-width: $breakpoint-medium) {
+
     .kb-panel-box {
         @include flex();
         flex-direction: column;
         justify-content: center;
+    }
+    
+    .kb-panel-layers--mega {       
+        .kb-panel-box {
+          margin: -20px 20px 20px;
+        }    
     }
 }
