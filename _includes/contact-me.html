@@ -1,27 +1,36 @@
-<section class="uk-grid uk-grid-medium section-split">
-    <div class="uk-width-1-1 uk-width-medium-1-2 section-split-title">
-        <h3 class="">Contact Me</h3>
-        <ul class="icons">
-            <i class="uk-icon-large uk-icon-linkedin"></i>
-            <i class="uk-icon-large uk-icon-dribbble"></i>
-            <i class="uk-icon-large uk-icon-github"></i>
-        </ul>
-    </div>
-    <div class="uk-width-1-1 uk-width-medium-1-2 section-split-content">
-        <form class="uk-form uk-form-stacked kb-form">
-            <label for="form-name" class="uk-form-label kb-form-label">Your Name</label>
-            <div class="uk-form-controls">
-                <input type="text" id="form-name">
+<section class="contact-section uk-container uk-container-center">
+    <div class="uk-grid uk-grid-medium">
+        <div class="contact-section--content uk-width-1-1 uk-width-medium-1-2">
+            <div class="contact-section--title">
+                <h3>Contact Me</h3>
+                <p>Got an awesome project?</p>
+                <p>Shoot me a message with the details!</p>
             </div>
-            <label for="form-email" class="uk-form-label kb-form-label">Your Email</label>
-            <div class="uk-form-controls">
-                <input type="email" id="form-email">
-            </div>
-            <label for="form-message" class="uk-form-label kb-form-label">Message</label>
-            <div class="uk-form-controls">
-                <textarea type="text" id="form-message"></textarea>
-            </div>
-            <a class="button button-fill-default uk-button uk-width-1-1">Send Message</a>
-        </form>
+            <ul class="icons uk-hidden-small">
+                {% include _social-icons.html %}
+            </ul>
+        </div>
+        <div class="uk-width-1-1 uk-width-medium-1-2">
+            <form class="uk-form uk-form-stacked kb-form uk-clearfix">
+                <label for="form-name" class="uk-form-label kb-form-label">Your Name</label>
+                <div class="uk-form-controls">
+                    <input type="text" id="form-name">
+                </div>
+                <label for="form-email" class="uk-form-label kb-form-label">Your Email</label>
+                <div class="uk-form-controls">
+                    <input type="email" id="form-email">
+                </div>
+                <label for="form-message" class="uk-form-label kb-form-label">Message</label>
+                <div class="uk-form-controls">
+                    <textarea type="text" id="form-message"></textarea>
+                </div>
+                <a class="button button-fill-blue uk-button uk-float-right">Send Message</a>
+            </form>
+        </div>
+        <div class="uk-width-1-1 uk-visible-small margin-top-small margin-bottom-small">
+            <ul class="icons text-center">
+                {% include _social-icons.html %}
+            </ul>
+        </div>
     </div>
 </section>

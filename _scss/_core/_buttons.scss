@@ -4,6 +4,7 @@
     line-height: 37px;
     font-weight: 400;
     font-size: 14px;
+    letter-spacing: .25px;
 }
 .button-fill-default {
     box-shadow: 0 3px 1px 0 #7a1f1b;
@@ -15,5 +16,20 @@
     background: linear-gradient(#ee4731, #f4372e); /* Standard syntax */
     &:hover {
         color: #ffffff;
+    }
+}
+
+.button-fill-blue {
+    box-shadow: none;
+    transition: box-shadow .25s, background .25s;
+    color: #ffffff;
+    background: #f4372e; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#2d86f4, #2774d3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2d86f4, #2774d3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2d86f4, #2774d3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#2d86f4, #2774d3); /* Standard syntax */
+    &:hover {
+        color: #ffffff;
+        box-shadow: 0 5px 11px 0 rgba(39, 116, 211, 0.35);
     }
 }

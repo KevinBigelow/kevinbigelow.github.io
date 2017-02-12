@@ -9,6 +9,7 @@ $border-gray-default: #eaeaea;
 
 body, html {
     background: $bg-default;
+    font-size: 16px;
 }
 
 // Header
@@ -30,6 +31,7 @@ header {
 
 .site-title {
     font-size: 16px;
+    letter-spacing: 2px;
     line-height: 18px;
     font-weight: 400;
     margin: 0;
@@ -54,6 +56,7 @@ header {
     color: #ffffff;
     padding: 9px 0 11px;
     text-align: center;
+    letter-spacing: 1.5px;
     flex-grow: 1;
     font-weight: 100;
     &:not(:first-of-type) {
@@ -70,6 +73,7 @@ header {
 
 // Section Split
 
+/*
 .section-split {
     padding-top: 0;
     padding-bottom: 35px;
@@ -87,13 +91,31 @@ header {
     display: block;
     margin: 30px auto 0;
 }
+*/
 
 
 ul.icons {
     padding-left: 0;
     list-style: none;
     margin-top: 0;
+    li {
+        display: inline-block;
+        margin-right: 8px;
+    }
 }
+
+.icon-link--linkedin {
+    color: #0077b5;
+}
+
+.icon-link--dribbble {
+    color: #ea4c89;
+}
+
+.icon-link--github {
+    color: #1e2327;
+}
+
 .uk-icon-html5 {
     color: #e44d26;
 }
@@ -162,6 +184,7 @@ ul.icons {
     
     // Section Split
     
+/*
     .section-split {
         padding-top: 30px;
         padding-bottom: 55px;
@@ -179,6 +202,7 @@ ul.icons {
     .section-split-content {
         margin: 0;
     }
+*/
 }
 
 @media screen and (min-width: $breakpoint-large) {
