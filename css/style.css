@@ -3766,8 +3766,8 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 .button-fill-default { box-shadow: 0 3px 1px 0 #7a1f1b; color: #ffffff; background: #f4372e; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(#ee4731, #f4372e); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(#ee4731, #f4372e); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(#ee4731, #f4372e); /* For Firefox 3.6 to 15 */ background: linear-gradient(#ee4731, #f4372e); /* Standard syntax */ }
 .button-fill-default:hover { color: #ffffff; }
 
-.button-fill-blue { box-shadow: none; transition: box-shadow .25s, background .25s; color: #ffffff; background: #f4372e; /* For browsers that do not support gradients */ background: -webkit-linear-gradient(#2d86f4, #2774d3); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(#2d86f4, #2774d3); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(#2d86f4, #2774d3); /* For Firefox 3.6 to 15 */ background: linear-gradient(#2d86f4, #2774d3); /* Standard syntax */ }
-.button-fill-blue:hover { color: #ffffff; box-shadow: 0 5px 11px 0 rgba(39, 116, 211, 0.35); }
+.button-fill-blue { box-shadow: none; -webkit-transition: all 0.25s; -moz-transition: all 0.25s ease-in-out; -ms-transition: all 0.25s ease-in-out; /* IE10 is actually unprefixed */ -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; color: #ffffff; background: #2774d3; /* For browsers that do not support gradients */ }
+.button-fill-blue:hover { color: #ffffff; box-shadow: 0 3px 11px 0 rgba(39, 116, 211, 0.35); letter-spacing: .5px; background: #2d86f4; }
 
 .project-heading { margin-bottom: 0; }
 .project-heading h1 { margin-bottom: 6px; }
@@ -3872,13 +3872,18 @@ header { background: url("/img/bg-dark.jpg") #262626; }
 }
 */
 ul.icons { padding-left: 0; list-style: none; margin-top: 0; }
-ul.icons li { display: inline-block; margin-right: 8px; }
+ul.icons li { float: left; margin-right: 10px; }
+ul.icons a { display: block; padding-top: 3px; -webkit-transition: 0.25s all; -moz-transition: 0.25s all ease-in-out; -ms-transition: 0.25s all ease-in-out; /* IE10 is actually unprefixed */ -o-transition: 0.25s all ease-in-out; transition: 0.25s all ease-in-out; }
+ul.icons a:hover { padding-top: 0; }
 
 .icon-link--linkedin { color: #0077b5; }
+.icon-link--linkedin:hover { color: #0a90d6; }
 
 .icon-link--dribbble { color: #ea4c89; }
+.icon-link--dribbble:hover { color: #ff6aa3; }
 
 .icon-link--github { color: #1e2327; }
+.icon-link--github:hover { color: #343c42; }
 
 .uk-icon-html5 { color: #e44d26; }
 

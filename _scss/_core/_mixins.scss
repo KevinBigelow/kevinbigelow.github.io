@@ -5,3 +5,11 @@
     display: -webkit-flex;     /* NEW - Chrome */
     display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+
+@mixin transition($property, $duration, $ease) {
+    -webkit-transition: $property $duration;
+    -moz-transition: $property $duration $ease;
+    -ms-transition: $property $duration $ease; /* IE10 is actually unprefixed */
+    -o-transition: $property $duration $ease;
+    transition: $property $duration $ease;
+}

@@ -99,21 +99,38 @@ ul.icons {
     list-style: none;
     margin-top: 0;
     li {
-        display: inline-block;
-        margin-right: 8px;
+        float: left;
+        margin-right: 10px;
+    }
+    a {
+        display: block;
+        padding-top: 3px;
+        @include transition(.25s, all, ease-in-out);
+    }
+    a:hover {
+        padding-top: 0;
     }
 }
 
 .icon-link--linkedin {
     color: #0077b5;
+    &:hover {
+        color: #0a90d6;
+    }
 }
 
 .icon-link--dribbble {
     color: #ea4c89;
+    &:hover {
+        color: #ff6aa3;
+    }
 }
 
 .icon-link--github {
     color: #1e2327;
+    &:hover {
+        color: #343c42;
+    }
 }
 
 .uk-icon-html5 {
