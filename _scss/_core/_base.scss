@@ -98,8 +98,9 @@ ul.icons {
     padding-left: 0;
     list-style: none;
     margin-top: 0;
+    @include flex();
+    justify-content: center;
     li {
-        float: left;
         margin-right: 10px;
     }
     a {
@@ -198,7 +199,10 @@ ul.icons {
         }
     }
     
-    
+    ul.icons {
+        justify-content: flex-start;
+    }
+
     // Section Split
     
 /*
