@@ -5,10 +5,17 @@
     font-weight: 400;
     font-size: 14px;
     letter-spacing: .4px;
+    padding: 0 40px;
+    color: #ffffff;
+    @include transition(all, .25s, ease-in);
+    &:hover {
+        color: #ffffff;
+        letter-spacing: .8px;
+    }
 }
+
 .button-fill-default {
     box-shadow: 0 3px 1px 0 #7a1f1b;
-    color: #ffffff;
     background: #f4372e; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#ee4731, #f4372e); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#ee4731, #f4372e); /* For Opera 11.1 to 12.0 */
@@ -21,18 +28,21 @@
 
 .button-fill-blue {
     box-shadow: none;
-    @include transition(all, .25s, ease-in);
-    color: #ffffff;
     background: #2774d3;
 //     background: -webkit-linear-gradient(#2d86f4, #2774d3); /* For Safari 5.1 to 6.0 */
 //     background: -o-linear-gradient(#2d86f4, #2774d3); /* For Opera 11.1 to 12.0 */
 //     background: -moz-linear-gradient(#2d86f4, #2774d3); /* For Firefox 3.6 to 15 */
 //     background: linear-gradient(#2d86f4, #2774d3); /* Standard syntax */
     &:hover {
-        color: #ffffff;
         box-shadow: 0 3px 11px 0 rgba(39, 116, 211, 0.5);
         text-shadow:  0 3px 11px #2774d3;
-        letter-spacing: .8px;
         background: #2d86f4; 
+    }
+}
+
+.button-fill-blue-dark {
+    background: #18538c;
+    &:hover {
+        background: #144677;
     }
 }
