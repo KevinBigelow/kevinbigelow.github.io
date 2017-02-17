@@ -21,15 +21,20 @@
 }
 
 .button-icon {
-    padding: 0;
-    width: 45px;
-    height: 45px;
-    text-align: center;
+    height: 55px;
+    width: 55px;
     border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    line-height: 60px;
 }
 
 .button-small {
     padding: 0 25px;
+}
+
+.button-medium {
+    max-width: 250px;
 }
 
 .button-fill-red {

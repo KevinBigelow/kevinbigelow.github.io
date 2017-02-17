@@ -3767,9 +3767,11 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 .button-grow { letter-spacing: .4px; }
 .button-grow:hover { letter-spacing: .8px; }
 
-.button-icon { padding: 0; width: 45px; height: 45px; text-align: center; border-radius: 50%; }
+.button-icon { height: 55px; width: 55px; border-radius: 50%; text-align: center; padding: 0; line-height: 60px; }
 
 .button-small { padding: 0 25px; }
+
+.button-medium { max-width: 250px; }
 
 .button-fill-red { background: #f4372e; /* For browsers that do not support gradients */ }
 .button-fill-red:hover { box-shadow: 0 3px 11px 0 rgba(211, 79, 39, 0.5); background: #ee4731; color: #ffffff; }
@@ -3842,16 +3844,17 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 .more-projects p { font-weight: 100; margin: 10px 0 40px; }
 
 @media screen and (min-width: 480px) { .more-projects { padding: 30px 0 50px; } }
-.project-card--img { height: 340px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+.project-card { box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); border-radius: 5px 5px 10px 10px; overflow: hidden; padding: 0; margin-bottom: 25px; }
 
-.project-card--bottom { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ background: #ffffff; justify-content: space-between; align-items: center; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding: 2px 10px 15px; position: relative; }
-.project-card--bottom:after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 23px; background-image: linear-gradient(to right, #f8f8f8, #f8f8f8, #ffffff); }
+.project-card--img { height: 340px; display: block; }
 
-.project-card--title span, .project-card--title h4 { z-index: 2; }
-.project-card--title span { color: #6a6a6a; font-size: 14px; font-style: italic; position: relative; }
-.project-card--title h4 { font-size: 19px; font-weight: 700; padding: 10px 0; margin: 0; }
+.project-card--bottom { background: #ffffff; position: relative; }
 
-.project-card--button { z-index: 2; margin: 10px 0 0; }
+.project-card--title { position: relative; }
+.project-card--title span { font-size: 14px; font-style: italic; color: #6a6a6a; display: block; width: 100%; padding: 5px 60px 6px 15px; box-sizing: border-box; background-image: linear-gradient(to right, #f8f8f8, #f8f8f8, #ffffff); }
+.project-card--title h4 { font-size: 19px; font-weight: 700; padding: 14px 60px 24px 15px; margin: 0; }
+
+.project-card--button { margin: 0; position: absolute; right: 15px; top: 48%; transform: translate(0, -50%); }
 
 .contact-section--content { margin-bottom: 20px; }
 .contact-section--content .icons { text-align: center; }
