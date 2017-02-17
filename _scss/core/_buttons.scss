@@ -10,18 +10,38 @@
     @include transition(all, .25s, ease-in);
     &:hover {
         color: #ffffff;
+    }
+}
+
+.button-grow {
+    letter-spacing: .4px;
+    &:hover {
         letter-spacing: .8px;
     }
 }
 
-.button-fill-default {
-    box-shadow: 0 3px 1px 0 #7a1f1b;
+.button-icon {
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.button-small {
+    padding: 0 25px;
+}
+
+.button-fill-red {
+//     box-shadow: 0 3px 1px 0 #7a1f1b;
     background: #f4372e; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#ee4731, #f4372e); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#ee4731, #f4372e); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#ee4731, #f4372e); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#ee4731, #f4372e); /* Standard syntax */
+//     background: -webkit-linear-gradient(#ee4731, #f4372e); /* For Safari 5.1 to 6.0 */
+//     background: -o-linear-gradient(#ee4731, #f4372e); /* For Opera 11.1 to 12.0 */
+//     background: -moz-linear-gradient(#ee4731, #f4372e); /* For Firefox 3.6 to 15 */
+//     background: linear-gradient(#ee4731, #f4372e); /* Standard syntax */
     &:hover {
+        box-shadow: 0 3px 11px 0 rgba(211, 79, 39, 0.5);
+        background: #ee4731;
         color: #ffffff;
     }
 }
