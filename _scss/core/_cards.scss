@@ -1,3 +1,10 @@
+.project-card-container {
+    // Must be nested in this way to override margin applied to uk-grid > * > :last-child
+    .project-card {
+        margin-bottom: 25px;
+    }
+}
+
 .project-card {
     box-shadow: 0 0 15px rgba(0, 0, 0, .4);
     border-radius: 5px 5px 10px 10px;
@@ -7,7 +14,7 @@
 }
 
 .project-card--img {
-    height: 340px;
+    height: 230px;
     display: block;
 }
 
@@ -42,4 +49,37 @@
     right: 15px;
     top: 48%;
     transform: translate(0, -50%);
+}
+
+@media screen and (min-width: $breakpoint-small) {
+    .project-card--img {
+        height: 340px;
+    }
+    .project-card--title {
+        h4 {
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+    .project-card--img {
+        height: 230px;
+    }
+    .project-card--title {
+        h4 {
+            font-size: 19px;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+    .project-card--img {
+        height: 340px;
+    }
+    .project-card--title {
+        h4 {
+            font-size: 24px;
+        }
+    }
 }
