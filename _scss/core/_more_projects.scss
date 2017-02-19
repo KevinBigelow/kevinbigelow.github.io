@@ -45,7 +45,7 @@
 
 @media screen and (min-width: $breakpoint-small) {
     .more-projects {
-        padding: 30px 0 50px;
+        padding: 30px 0;
         h3 {
             font-size: 45px;
         }
@@ -67,6 +67,7 @@
 @media screen and (min-width: $breakpoint-xlarge) {
     .more-projects {
         margin-top: 160px;
+        padding: 30px 0 60px;
         &:before {
             top: 20px;
             height: 120px;
