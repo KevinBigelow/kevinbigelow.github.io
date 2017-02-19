@@ -1,4 +1,18 @@
-<img class="" src="/images/{{ post.img }}"/>
-<h5>{{ post.category }}</h5>
-<a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h4>{{ post.title }}</h4></a>
-<a href="{{ post.url | prepend: site.baseurl }}" class="">View Project</a>
+<li class="uk-width-1-1 uk-width-medium-1-2">
+    <div class="project-card">
+        <a class="project-card--img uk-cover" href="{{ post.url }}">
+            <img src="{{ post.card-img }}" class="uk-cover-object"/>
+        </a>
+        <div class="project-card--bottom">
+            <div class='project-card--title'>
+                <span>
+                    {% for category in post.categories %}
+                        {{ category }}{% if forloop.last == false %},{% endif %}
+                    {% endfor %}
+                </span>
+                <h4>{{ post.title }}</h4>
+            </div>
+            <a href="" class="button button-fill-red button-icon uk-button project-card--button"><i class="fa fa-eye fa-2x"></i></a>
+        </div>
+    </div>
+</li>
