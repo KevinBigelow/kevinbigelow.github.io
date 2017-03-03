@@ -5,14 +5,13 @@
         </a>
         <div class="project-card--bottom">
             <div class='project-card--title'>
+                <h4>{{ post.title }}</h4>
                 <span>
                     {% for category in post.categories %}
-                        {{ category }}{% if forloop.last == false %},{% endif %}
+                        {{ category }}{% if forloop.last == false %} &{% endif %}
                     {% endfor %}
                 </span>
-                <h4>{{ post.title }}</h4>
             </div>
-            <a href="" class="button button-fill-red button-icon uk-button project-card--button"><i class="fa fa-eye fa-2x"></i></a>
         </div>
     </div>
 </li>

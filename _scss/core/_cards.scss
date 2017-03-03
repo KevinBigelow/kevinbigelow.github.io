@@ -6,7 +6,7 @@
 }
 
 .project-card {
-    box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .125);
     border-radius: 5px 5px 10px 10px;
     overflow: hidden;
     padding: 0;
@@ -28,19 +28,21 @@
     position: relative;
     span {
         font-size: 14px;
+        text-align: center;
         font-style: italic;
         color: $text-subdued;
         display: block;
         width: 100%;
-        padding: 5px 60px 6px 15px;
+        padding: 5px 15px 6px;
         box-sizing: border-box;
         background-image: linear-gradient(to right, #f8f8f8, #f8f8f8, #ffffff);
     }
     h4 {
         font-size: 19px;
         font-weight: 700;
-        padding: 14px 60px 24px 15px;
+        padding: 14px 15px 24px;
         margin: 0;
+        text-align: center;
     }
 }
 
