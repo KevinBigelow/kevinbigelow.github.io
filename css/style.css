@@ -3786,8 +3786,8 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 .projects { background: #1c62a4; margin: 16px 0 60px; padding: 20px 0; position: relative; width: 100vw; }
 .projects h1, .projects h2, .projects h3, .projects p { text-align: center; color: #ffffff; }
 .projects h2, .projects p { font-size: 15px; line-height: 22px; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; margin: 10px 0 0; }
-.projects:before { content: ''; background-image: url(../img/wave-top.svg); position: absolute; top: 0; left: 0; right: 0; height: 60px; transform: translateY(-100%); background-size: cover; background-repeat: no-repeat; background-position: center bottom; }
-.projects:after { content: ''; background-image: url(../img/wave-bottom.svg); position: absolute; bottom: -120px; left: 0; right: 0; height: 60px; transform: translateY(-100%); background-size: cover; background-repeat: no-repeat; background-position: center bottom; }
+.projects:before { content: ''; background-image: url(../img/wave-top.svg); position: absolute; top: 0; left: 0; right: 0; height: 40px; transform: translateY(-100%); background-size: cover; background-repeat: no-repeat; background-position: center bottom; }
+.projects:after { content: ''; background-image: url(../img/wave-bottom.svg); position: absolute; bottom: -78px; left: 0; right: 0; height: 40px; transform: translateY(-100%); background-size: cover; background-repeat: no-repeat; background-position: center bottom; }
 
 .projects h1, .more-projects h3 { font-size: 40px; margin: 0; }
 
@@ -3798,8 +3798,8 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 @media screen and (min-width: 960px) { .more-projects { margin: 120px 0 60px; } }
 @media screen and (min-width: 1220px) { .more-projects { margin-top: 160px; }
   .projects { padding: 30px 0 60px; }
-  .projects:before { top: 20px; height: 120px; }
-  .projects:after { bottom: -220px; height: 133px; } }
+  .projects:before { top: 3px; height: 70px; }
+  .projects:after { bottom: -138px; height: 70px; } }
 /* - - - - - - - - - - - - Project Pages - - - - - - - - - - - - */
 .project-heading { margin-bottom: 0; }
 .project-heading h1 { margin-bottom: 6px; }
@@ -3908,7 +3908,7 @@ body, html { background: #f4f6f7; font-size: 16px; }
 
 .header-blue { position: relative; background: #1c62a4; margin-bottom: 50px; }
 .header-blue .site-title, .header-blue .site-subtitle { color: #ffffff; }
-.header-blue:after { content: ''; background-image: url(../img/wave-bottom.svg); position: absolute; bottom: -120px; left: 0; right: 0; height: 60px; transform: translateY(-100%); background-size: cover; background-repeat: no-repeat; background-position: center bottom; }
+.header-blue:after { content: ''; background-image: url(../img/wave-bottom.svg); position: absolute; bottom: -78px; left: 0; right: 0; height: 40px; transform: translateY(-100%); background-size: cover; background-repeat: no-repeat; background-position: center bottom; }
 
 .site-heading { padding: 0; margin-bottom: 40px; }
 
@@ -3968,7 +3968,7 @@ ul.icons a:hover { padding-top: 0; }
   .site-nav { padding: 0; background: none; align-items: center; justify-content: flex-end; }
   ul.icons-left { justify-content: flex-start; }
   /* .section-split { padding-top: 30px; padding-bottom: 55px; }  .section-split-title { text-align: right; border-right: 1px solid $border-gray-default; padding-right: 25px; h3 { margin: 65px 0 10px; } }  .section-split-content { margin: 0; } */ }
-@media screen and (min-width: 960px) { .header-blue:after { bottom: -220px; height: 133px; } }
+@media screen and (min-width: 960px) { .header-blue:after { bottom: -138px; height: 70px; } }
 @media screen and (min-width: 1220px) { .header-large { padding: 100px 25px 200px; } }
 
 /*# sourceMappingURL=style.css.map */

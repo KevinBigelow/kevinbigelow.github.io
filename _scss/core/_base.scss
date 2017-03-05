@@ -78,10 +78,10 @@ header {
         content: '';
         background-image: url(../img/wave-bottom.svg);
         position: absolute;
-        bottom: -120px;
+        bottom: -78px;
         left: 0;
         right: 0;
-        height: 60px;
+        height: 40px;
         transform: translateY(-100%);
         background-size: cover;
         background-repeat: no-repeat;
@@ -321,8 +321,8 @@ ul.icons {
     
     .header-blue {
         &:after {
-            bottom: -220px;
-            height: 133px;
+            bottom: -138px;
+            height: 70px;
         }
     }
 }
