@@ -1,9 +1,12 @@
 ---
-layout: base
+layout: project
 title:  "Neutron Wings"
+slug: neutron-wings
 date:   2016-11-30 21:25:53 -0700
 categories: ['Web Design', 'Development']
 card-img: "/img/project-card-touchpoint-lg.jpg"
+neutron-wings: true
+proton-billing: true
 ---
 
 <main class="uk-container uk-container-center no-padding">
@@ -24,18 +27,6 @@ card-img: "/img/project-card-touchpoint-lg.jpg"
             </div>
         </section>
         
-        <!--
-        <div class="kb-panel-layers uk-grid uk-grid-collapse">
-            <div class="kb-panel-layer-img uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2 uk-cover uk-scrollspy-init-inview uk-scrollspy-inview" data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
-                <img src="{{site.baseurl}}/img/project-nw-1-lg.jpg" class="uk-cover-object"/>
-            </div>
-            <div class="uk-panel kb-panel-box kb-panel-layer-text uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-2 uk-scrollspy-init-inview uk-scrollspy-inview" data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
-                <h4 class="uk-panel-title">Design Context</h4>
-                <p>At Neuton, the culture is all about personal growth and development, building awesome things, and aiming high.</p> 
-                <p>I designed these stickers for Neutron on an impulse,  due to recent fascination with cool stickers.</p>
-            </div>
-        </div>
-        -->
         <div class="kb-panel-layers--mega">
             <img src="{{ site.baseurl }}/img/project-nw-1-xl.jpg"/>
             <div class="uk-width-small-1-1 uk-width-medium-3-4 uk-width-large-2-3">
@@ -60,5 +51,19 @@ card-img: "/img/project-card-touchpoint-lg.jpg"
         </div>
     </div>
 </main>
-{% include more-projects.html %}
-{% include contact-me.html %}
+
+<section class="projects more-projects">
+    <div class="uk-container uk-container-center">
+        <h3 class="uk-width-1-1">Similar Projects</h3>
+        <h2 class="uk-width-1-1">If you like the {{ page.title }} project, you’ll absolutely love these projects.</h2>
+        <ul class="project-card-container uk-grid uk-grid-medium">
+            {% assign relatedPosts = site.posts | where: 'neutron-wings', 'true' %}
+            {% for post in relatedPosts limit:2 %}
+                {% include card-project.html %}
+            {% endfor %}
+            <div class="uk-width-1-1">
+                <a class="button button-fill-blue-dark button-medium button-grow uk-button uk-align-center margin-top-xsmall">View All Projects</a>
+            </div>
+        </ul>
+    </div>
+</section>

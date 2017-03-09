@@ -65,6 +65,16 @@
     }
 }
 
+.button-fill-blue-light {
+    color: #1c62a4;
+    background: #eceff3;
+    &:hover {
+        box-shadow: 0 3px 11px 0 rgba(39, 116, 211, 0.5);
+        text-shadow: 0 3px 11px #2774d3;
+        background: #2d86f4;
+    }
+}
+
 .button-fill-blue-dark {
     background: #18538c;
     &:hover {

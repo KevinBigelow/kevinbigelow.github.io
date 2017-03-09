@@ -4,7 +4,7 @@
     {% include head.html %}
 
     <body>
-        <header class="header-large header-white">
+        <header class="header-small header-blue">
             <div class="uk-container uk-container-center no-padding">
                 <div class="uk-grid no-margin">
                     <div class="uk-width-1-1 uk-width-medium-1-2 site-heading">
@@ -13,16 +13,19 @@
                     </div>
                     
                     <div class="uk-width-1-1 uk-width-medium-1-2 site-nav uk-clearfix">
-                        <a class="nav-link button button-shorter button-grow button-fill-blue-light">Portfolio</a>
-                        <a class="nav-link button button-shorter button-grow button-fill-blue-light">About</a>
-                        <a class="nav-link button button-shorter button-grow button-fill-blue-light">Contact</a>
+                        <a class="nav-link button button-shorter button-grow button-fill-blue-dark">Portfolio</a>
+                        <a class="nav-link button button-shorter button-grow button-fill-blue-dark">About</a>
+                        <a class="nav-link button button-shorter button-grow button-fill-blue-dark">Contact</a>
                     </div>
                 </div>
             </div>
         </header>
 
+
         {{ content }}
         
+        {% include contact-me.html %}
+
         {% include footer.html %}
     </body>
     
