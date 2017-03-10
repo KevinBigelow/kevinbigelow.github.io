@@ -20,6 +20,7 @@
     margin: 0 auto;
     img {
         transition: min-width .25s, min-height .25s;
+        cursor: pointer;
         &:hover {
             min-width: 110%;
             min-height: 110%;
@@ -37,18 +38,19 @@
     span {
         font-size: 14px;
         text-align: center;
-        font-style: italic;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         color: $text-subdued;
         display: block;
         width: 100%;
-        padding: 7px 15px 11px;
+        padding: 5px 15px 11px;
         box-sizing: border-box;
         background-image: linear-gradient(to right, #f8f8f8, #f8f8f8, #ffffff);
     }
     h4 {
         font-size: 19px;
         font-weight: 700;
-        padding: 14px 15px 10px;
+        padding: 12px 15px 10px;
         margin: 0;
         text-align: center;
     }

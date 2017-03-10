@@ -3864,14 +3864,14 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 .project-card { box-shadow: 0 0 15px rgba(0, 0, 0, 0.125); border-radius: 5px 5px 10px 10px; overflow: hidden; padding: 0; max-width: 552.5px; margin: 0 auto 25px; }
 
 .project-card--img { height: 230px; display: block; margin: 0 auto; }
-.project-card--img img { transition: min-width .25s, min-height .25s; }
+.project-card--img img { transition: min-width .25s, min-height .25s; cursor: pointer; }
 .project-card--img img:hover { min-width: 110%; min-height: 110%; }
 
 .project-card--bottom { background: #ffffff; position: relative; }
 
 .project-card--title { position: relative; }
-.project-card--title span { font-size: 14px; text-align: center; font-style: italic; color: #6a6a6a; display: block; width: 100%; padding: 7px 15px 11px; box-sizing: border-box; background-image: linear-gradient(to right, #f8f8f8, #f8f8f8, #ffffff); }
-.project-card--title h4 { font-size: 19px; font-weight: 700; padding: 14px 15px 10px; margin: 0; text-align: center; }
+.project-card--title span { font-size: 14px; text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #6a6a6a; display: block; width: 100%; padding: 5px 15px 11px; box-sizing: border-box; background-image: linear-gradient(to right, #f8f8f8, #f8f8f8, #ffffff); }
+.project-card--title h4 { font-size: 19px; font-weight: 700; padding: 12px 15px 10px; margin: 0; text-align: center; }
 
 .project-card--button { margin: 0; position: absolute; right: 15px; top: 48%; transform: translate(0, -50%); }
 

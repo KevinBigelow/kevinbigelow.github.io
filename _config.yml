@@ -4,7 +4,7 @@ myname: Kevin Bigelow
 jobtitle: UI Designer & Developer
 email: kbigelow.design@gmail.com
 description: From wireframes to code, I design and build interfaces.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "http://www.kevinbigelow.design"
 twitter_username: jekyllrb
 github_username:  KevinBigelow

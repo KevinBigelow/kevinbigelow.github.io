@@ -3,8 +3,9 @@ layout: home
 ---
 <section class="projects">
     <div class="uk-container uk-container-center">
+        <a id="portfolio-begin"></a>
         <h1>Portfolio</h1>
-        <h2>From wireframes to code, I design and build user interfaces.</h1>
+        <h2>From wireframes to code, I design and build software and websites.</h1>
         <ul class="project-card-container uk-grid uk-grid-medium">
         {% for post in site.posts %}
             {% include card-project.html %}
@@ -12,5 +13,3 @@ layout: home
         </ul>
     </div>
 </section>
-
-{% include contact-me.html %}
