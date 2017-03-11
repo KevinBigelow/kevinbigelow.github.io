@@ -3761,8 +3761,8 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 
 @media screen and (min-width: 768px) { .kb-panel-box { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ flex-direction: column; justify-content: center; }
   .kb-panel-layers--mega .kb-panel-box { margin: -20px 20px 20px; } }
-.button { border-radius: 22px; height: 42px; line-height: 37px; font-weight: 400; font-size: 14px; letter-spacing: .4px; padding: 0 40px; color: #ffffff; -webkit-transition: all 0.25s; -moz-transition: all 0.25s ease-in; -ms-transition: all 0.25s ease-in; /* IE10 is actually unprefixed */ -o-transition: all 0.25s ease-in; transition: all 0.25s ease-in; }
-.button:hover { color: #ffffff; }
+.button, input[type=submit] { border-radius: 22px; height: 42px; line-height: 37px; font-weight: 400; font-size: 14px; letter-spacing: .4px; padding: 0 40px; color: #ffffff; -webkit-transition: all 0.25s; -moz-transition: all 0.25s ease-in; -ms-transition: all 0.25s ease-in; /* IE10 is actually unprefixed */ -o-transition: all 0.25s ease-in; transition: all 0.25s ease-in; }
+.button:hover, input[type=submit]:hover { color: #ffffff; }
 
 .button-grow { letter-spacing: .4px; }
 .button-grow:hover { letter-spacing: .8px; }
