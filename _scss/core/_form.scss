@@ -6,11 +6,16 @@ $bg-field: #f1f3f4;
 $label-color: $text-subdued;
 $blue: #2d86f4;
 
+.kb-form-wrap {
+
+}
+
 .kb-form {
-    background: $white;
-    padding: 25px 30px 35px;
     border-radius: 5px;
     box-shadow: 0 0 15px 0 rgba(0,0,0,.07);
+    background: $white;
+    padding: 25px 30px 25px;
+    position: relative;
     select,
     textarea,
     input:not([type]),
@@ -61,31 +66,58 @@ $blue: #2d86f4;
     }
 }
 
-.kb-form--alert {
-    p, span, h5 {
-        color: #ffffff;
+.kb-form-overlay {
+    position: absolute;
+    display: none;
+    background: rgba(255, 255, 255, .8);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .fa {
+        display: block;
+        position: absolute;
         text-align: center;
+        top: 40%;
         width: 100%;
+        color: #1c62a4;
+    }
+}
+
+.kb-form-alert-hidden {
+    display: none;
+}
+
+.kb-form-alert {
+    margin-bottom: -6px;
+    padding: 17px 30px 22px;
+    border-radius: 5px;
+    p, span, h4 {
+        color: $white;
         display: block;
     }
-}
-
-.kb-form--alert-danger {
-    p, span, h5 {
-        color: #c13d33;
+    h4 {
+        font-size: 21px;
+        font-weight: 400;
+        margin: 0 0 5px;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 100;
+        margin: 0;
     }
 }
 
-.kb-form--alert-info {
-    p, span, h5 {
-        color: #1c63a5;
-    }
+.kb-form-alert-danger {
+    background: #c13d33;
 }
 
-.kb-form--alert-success {
-    p, span, h5 {
-        color: #33c147;
-    }
+.kb-form-alert-info {
+    background: #1c63a5;
+}
+
+.kb-form-alert-success {
+    background: #33c147;
 }
 
 @media screen and (min-width: $breakpoint-medium) {

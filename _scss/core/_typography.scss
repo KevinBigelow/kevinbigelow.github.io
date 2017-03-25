@@ -53,6 +53,17 @@ p {
     text-align: center;
 }
 
+.text-light {
+    font-weight: 100 !important;
+}
+
+.text-regular {
+    font-weight: 400 !important;
+}
+
+.text-bold {
+    font-weight: 700 !important;
+}
 
 @media screen and (min-width: $breakpoint-small) {
 

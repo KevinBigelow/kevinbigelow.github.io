@@ -5,14 +5,26 @@
             <div class="contact-section--title">
                 <h3>Contact Me</h3>
                 <p>Utilize my design and code expertise on your next project.</p>
-                <p>Shoot me a message to get stated</p>
+                <p>Shoot me a message to get stated.</p>
             </div>
             <ul class="icons icons-left uk-hidden-small">
                 {% include _social-icons.html %}
             </ul>
         </div>
-        <div class="contact-form-wrap uk-width-1-1 uk-width-medium-1-2">
-            <form id="contact-form" class="uk-form uk-form-stacked kb-form uk-clearfix" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
+        <div class="kb-form-wrap uk-width-1-1 uk-width-medium-1-2" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
+            <div id="kb-form-success" class="kb-form-alert kb-form-alert-hidden kb-form-alert-success uk-animation-slide-bottom">
+                <h4>Your message was sent!</h4>
+                <p>I typically respond within 48 hours.</p>
+            </div>
+            <div id="kb-form-error" class="kb-form-alert kb-form-alert-hidden kb-form-alert-danger uk-animation-slide-bottom">
+                <h4>Blast!</h4>
+                <p>Something went wrong, try again or email me. </p>
+                <p class="text-regular">{{ site.email }}</p>
+            </div>
+            <form id="contact-form" class="uk-form uk-form-stacked kb-form uk-clearfix">
+                <span class="kb-form-overlay">
+                    <i class="fa fa-spinner fa-spin fa-4x"></i>
+                </span>
                 <label for="form-name" class="uk-form-label kb-form-label">Your Name</label>
                 <div class="uk-form-controls">
                     <input type="text" id="form-name" name="name">
@@ -27,7 +39,6 @@
                 </div>
                 <input type="text" name="_gotcha" style="display:none" />
                 <input type="submit" value="Send Message" class="button button-fill-blue button-grow uk-button uk-float-right"/>
-<!--                 <a type="submit" class="button button-fill-blue button-grow uk-button uk-float-right">Send Message</a> -->
             </form>
         </div>
         <div class="uk-width-1-1 uk-visible-small margin-top-small margin-bottom-small">
@@ -37,3 +48,39 @@
         </div>
     </div>
 </section>
+
+<script type="text/javascript">
+    $(document).on('submit', $('#contact-form'), function(e) {
+        var $contactFormWrap = $('.kb-form-wrap');
+        var $contactForm = $('#contact-form');
+        var $formOverlay = $contactForm.find('.kb-form-overlay');
+        
+    	e.preventDefault();
+    
+    	$.ajax({
+    		url: '//formspree.io/{{ site.email }}',
+    		method: 'POST',
+    		data: $(this).serialize(),
+    		dataType: 'json',
+    		beforeSend: function() {
+                $contactForm.find('.kb-form-overlay').show();
+                $contactForm.find('input:submit').prop('value', 'Sending Message...');
+                $contactForm.find('input').prop('disabled', true);
+                $contactFormWrap.find('#kb-form-error').hide();
+                $contactFormWrap.find('#kb-form-success').hide();
+    		},
+    		success: function(data) {
+            	$contactForm.find('.kb-form-overlay').hide();
+            	$contactForm.find('input').prop('disabled', false);
+            	$contactForm.find('input:submit').prop('value', 'Send Another Message');
+                $contactFormWrap.find('#kb-form-success').show();
+    		},
+    		error: function(err) {
+            	$contactForm.find('.kb-form-overlay').hide();
+            	$contactForm.find('input').prop('disabled', false);
+            	$contactForm.find('input:submit').prop('value', 'Send Message');
+                $contactFormWrap.find('#kb-form-error').show();
+    		}
+    	});
+    });
+</script>
