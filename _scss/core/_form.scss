@@ -61,6 +61,33 @@ $blue: #2d86f4;
     }
 }
 
+.kb-form--alert {
+    p, span, h5 {
+        color: #ffffff;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+}
+
+.kb-form--alert-danger {
+    p, span, h5 {
+        color: #c13d33;
+    }
+}
+
+.kb-form--alert-info {
+    p, span, h5 {
+        color: #1c63a5;
+    }
+}
+
+.kb-form--alert-success {
+    p, span, h5 {
+        color: #33c147;
+    }
+}
+
 @media screen and (min-width: $breakpoint-medium) {
     .kb-form {
         .button {

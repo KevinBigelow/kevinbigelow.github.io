@@ -1,17 +1,17 @@
 <section class="contact-section uk-container uk-container-center">
-    <a id="contact-form"></a>
+    <a id="contact-form-section"></a>
     <div class="uk-grid uk-grid-medium">
         <div class="contact-section--content uk-width-1-1 uk-width-medium-1-2" data-uk-scrollspy="{cls:'uk-animation-fade'}">
             <div class="contact-section--title">
                 <h3>Contact Me</h3>
-                <p>Got an awesome project?</p>
-                <p>Shoot me a message with the details!</p>
+                <p>Utilize my design and code expertise on your next project.</p>
+                <p>Shoot me a message to get stated</p>
             </div>
             <ul class="icons icons-left uk-hidden-small">
                 {% include _social-icons.html %}
             </ul>
         </div>
-        <div class="uk-width-1-1 uk-width-medium-1-2">
+        <div class="contact-form-wrap uk-width-1-1 uk-width-medium-1-2">
             <form id="contact-form" class="uk-form uk-form-stacked kb-form uk-clearfix" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
                 <label for="form-name" class="uk-form-label kb-form-label">Your Name</label>
                 <div class="uk-form-controls">
@@ -37,33 +37,3 @@
         </div>
     </div>
 </section>
-
-<script>
-var $contactForm = $('#contact-form');
-var $body = $('body');
-var $successMessage = $('<div class="alert alert--success sticky "><div class="row">Message sent to Kevin!</div></div>');
-$contactForm.submit(function(e) {
-	e.preventDefault();
-	$.ajax({
-		url: '//formspree.io/kbigelow.design@gmail.com',
-		method: 'POST',
-		data: $(this).serialize(),
-		dataType: 'json',
-		beforeSend: function() {
-			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-		},
-		success: function(data) {
-			$contactForm.find('.alert--loading').hide();
-            $('#modal').slideToggle(500);
-            $('body').toggleClass('no-scroll');
-            $body.append($successMessage);
-            $successMessage.delay(500).slideToggle(500).delay(5000).slideToggle(500);
-            
-		},
-		error: function(err) {
-			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--error"><span class="red-text">Oops, there was an error!</span><br/>Email me at mb@michaelbigelowmusic.com</div>');
-		}
-	});
-});
-</script>

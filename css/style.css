@@ -3829,6 +3829,14 @@ h5.uk-panel-title { margin-bottom: 10px; line-height: 16px; font-size: 14px; }
 .kb-form .kb-form-label:not(:first-of-type) { margin-top: 11px; }
 .kb-form .button { margin-top: 20px; width: 100%; }
 
+.kb-form--alert p, .kb-form--alert span, .kb-form--alert h5 { color: #ffffff; text-align: center; width: 100%; display: block; }
+
+.kb-form--alert-danger p, .kb-form--alert-danger span, .kb-form--alert-danger h5 { color: #c13d33; }
+
+.kb-form--alert-info p, .kb-form--alert-info span, .kb-form--alert-info h5 { color: #1c63a5; }
+
+.kb-form--alert-success p, .kb-form--alert-success span, .kb-form--alert-success h5 { color: #33c147; }
+
 @media screen and (min-width: 768px) { .kb-form .button { width: auto; min-width: 50%; } }
 .mobile-width-full { margin-left: -10px; margin-right: -10px; }
 
