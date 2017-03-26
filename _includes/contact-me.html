@@ -51,36 +51,41 @@
 
 <script type="text/javascript">
     $(document).on('submit', $('#contact-form'), function(e) {
-        var $contactFormWrap = $('.kb-form-wrap');
-        var $contactForm = $('#contact-form');
-        var $formOverlay = $contactForm.find('.kb-form-overlay');
-        
     	e.preventDefault();
-    
+
+        var $contactFormWrap = $('.kb-form-wrap'),
+            $contactForm = $('#contact-form'),
+            $formOverlay = $contactForm.find('.kb-form-overlay'),
+            $formSubmitButton = $contactForm.find('input:submit'),
+            $formInputs = $contactForm.find('#form-name, #form-email, #form-message'),
+            $formErrorMessage = $contactFormWrap.find('#kb-form-error'),
+            $formSuccessMessage = $contactFormWrap.find('#kb-form-success');
+
     	$.ajax({
     		url: '//formspree.io/{{ site.email }}',
     		method: 'POST',
     		data: $(this).serialize(),
     		dataType: 'json',
     		beforeSend: function() {
-                $contactForm.find('.kb-form-overlay').show();
-                $contactForm.find('input:submit').prop('value', 'Sending Message...');
-                $contactForm.find('input').prop('disabled', true);
-                $contactFormWrap.find('#kb-form-error').hide();
-                $contactFormWrap.find('#kb-form-success').hide();
+                $formOverlay.show();
+                $formInputs.prop('disabled', true);
+                $formSubmitButton.prop('value', 'Sending Message...');
+                $formErrorMessage.hide();
+                $formSuccessMessage.hide();
     		},
     		success: function(data) {
-            	$contactForm.find('.kb-form-overlay').hide();
-            	$contactForm.find('input').prop('disabled', false);
-            	$contactForm.find('input:submit').prop('value', 'Send Another Message');
-                $contactFormWrap.find('#kb-form-success').show();
+                $formOverlay.hide();
+                $formInputs.prop('disabled', false);
+                $formSubmitButton.prop('value', 'Send Another Message');
+                $formSuccessMessage.show();
     		},
     		error: function(err) {
-            	$contactForm.find('.kb-form-overlay').hide();
-            	$contactForm.find('input').prop('disabled', false);
-            	$contactForm.find('input:submit').prop('value', 'Send Message');
-                $contactFormWrap.find('#kb-form-error').show();
+                $formOverlay.hide();
+                $formInputs.prop('disabled', false);
+                $formSubmitButton.prop('value', 'Send Message');
+                $formErrorMessage.show();
     		}
     	});
+
     });
 </script>
