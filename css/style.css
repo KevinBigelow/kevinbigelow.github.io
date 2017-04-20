@@ -3979,11 +3979,11 @@ ul.icons a:hover { padding-top: 0; }
   .header-small .site-title { font-size: 41px; line-height: 35px; }
   .header-small .site-subtitle { margin-left: 3px; }
   .header-small .site-nav { padding: 14px 0 0; }
-  .header-large { padding: 100px 25px 180px; }
+  .header-large { padding: 70px 25px 130px; }
   .header-large .site-nav { padding: 34px 0 0; }
   .nav-link { max-width: 160px; }
   ul.icons-left { justify-content: flex-start; } }
 @media screen and (min-width: 960px) { .header-blue:after { bottom: -83px; height: 43px; } }
-@media screen and (min-width: 1220px) { .header-large { padding: 100px 25px 200px; } }
+@media screen and (min-width: 1220px) { .header-large { padding: 70px 25px 150px; } }
 
 /*# sourceMappingURL=style.css.map */

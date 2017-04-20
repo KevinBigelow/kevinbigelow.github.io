@@ -244,7 +244,8 @@ ul.icons {
     }
 
     .header-large {
-        padding: 100px 25px 180px;
+//         padding: 100px 25px 180px;
+        padding: 70px 25px 130px;
         .site-nav {
             padding: 34px 0 0;
         }
@@ -272,6 +273,7 @@ ul.icons {
 @media screen and (min-width: $breakpoint-xlarge) {
     
     .header-large {
-        padding: 100px 25px 200px;
+//         padding: 100px 25px 200px;
+        padding: 70px 25px 150px;
     }
 }
